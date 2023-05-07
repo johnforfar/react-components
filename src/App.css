@@ -36,3 +36,11 @@
     transform: rotate(360deg);
   }
 }
+
+.Main-input {
+  padding: 5px 20px;
+}
+
+.Main-input fieldset {
+  margin: 20px 0;
+}

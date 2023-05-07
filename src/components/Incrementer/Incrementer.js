@@ -10,7 +10,7 @@ const Incrementer = () => {
         <div>
             <h3>Incrementer Component:</h3>
             <button onClick={decrement}>-</button>
-            <span>{count}</span>
+            <span>${count}</span>
             <button onClick={increment}>+</button>
             <button onClick={reset}>reset</button>
         </div>

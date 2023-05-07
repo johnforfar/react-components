@@ -8,18 +8,40 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <h1>React Components</h1>
+
+       
+      </header>
+      <main>
+        <div className='Main-input'>
+          <h1>React Input</h1>
+          <form>
+            <fieldset>
+              <label htmlFor="name">Name:
+                <input type="text" id="name" name="name" />
+              </label>
+            </fieldset>
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+        <div className="Main-components">
+      <h1>React Components</h1>
         <Accordion />
         <Incrementer />
-        <a
+        </div>
+      </main>
+
+      <footer className="footer">
+        <div>
+        <p>Another Project by <a
           className="App-link"
           href="https://johnforfar.com"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Another Project by John Forfar
-        </a>
-      </header>
+           John Forfar
+        </a></p>
+        </div>
+      </footer>
     </div>
   );
 }
