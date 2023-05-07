@@ -4,17 +4,21 @@ import Accordion from './components/accordion/Accordion';
 import Incrementer from './components/Incrementer/Incrementer';
 
 function App() {
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    alert("Form submitted.");
+  }
+
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-
-       
       </header>
+
       <main>
         <div className='Main-input'>
           <h1>React Input</h1>
-          <form>
+          <form onSubmit={handleSubmit}>
             <fieldset>
               <label htmlFor="name">Name:
                 <input type="text" id="name" name="name" />
